@@ -1,0 +1,190 @@
+/* ======= GENERAL ======= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root {
+    --background: #F2EECB;
+    --primary: #000000;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--primary);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body, button {
+    font-family: 'Poppins';
+    font-size: 1.5em;
+    color: var(--primary)
+}
+
+@media screen and (max-width: 450px) {
+    body, button {
+        font-size: 1.25em;
+    }
+}
+
+button {
+    background-color: var(--background);
+    height: 50px;
+    border-radius: 10px;
+    font-size: .8em;
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    border-bottom: 4px solid var(--primary);
+}
+
+/* button:hover {
+    filter: brightness(0.9);
+} */
+
+button:active {
+    transform: translateY(4px);
+    border-bottom: 1px solid;
+}
+
+/* ======= MENU ======= */
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    height: 150px;
+    justify-content: space-between;
+}
+
+.menuButton {
+    width: 100%;
+}
+
+/* ======= AI SETTINGS ======= */
+#aiSettings {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dificulties, #icones {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.dificulty, .icone {
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+    padding: 5px 10px;
+    width: 110px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0px 25px 0px;
+}
+
+#icones {
+    justify-content: space-between;
+    width: 150px;
+}
+
+.icone {
+    width: 50px;
+}
+/* ======= GAME ======= */
+#game {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .7em;
+    width: 90%;
+    max-width: 400px;
+    height: 460px;
+}
+
+#gameHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#turn {
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 110px;
+}
+
+#turn img {
+    width: .9em;
+    filter: brightness(0)
+}
+
+#reset {
+    padding: 0px 13px;
+    display: flex;
+    align-items: center;
+}
+
+#reset img {
+    width: 1.5em;
+} 
+
+#gameMain {
+    background-color: var(--primary);
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10px, 200px));
+    grid-gap: 3px;
+    justify-content: center;
+}
+
+.square {
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square:hover {
+    filter: brightness(0.9);
+}
+
+.squareIcon {
+    width: 40%;
+}
+
+#gameScore {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score {
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.scoreTitle {
+    font-size: .8em;
+}
+/* ======= WINSTATE ======= */
+#winstate {
+    display: none;
+    width: 100%;
+    padding: 0px 20px;
+    background-color: var(--background);
+}

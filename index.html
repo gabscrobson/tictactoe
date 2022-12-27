@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ------- MENU ------- -->
+    <div id="menu">
+        <p class="menuTitle">ESCOLHA O SEU MODO DE JOGO</p>
+        <button class="menuButton" ontouchstart>NOVO JOGO (VS AMIGO)</button>
+        <button class="menuButton" ontouchstart>NOVO JOGO (VS IA)</button>
+    </div>
+
+    <!-- ------- AI SETTINGS ------- -->
+    <div id="aiSettings">
+
+        <p class="menuTitle">JOGAR COMO</p>
+        <div id="icones">
+            <div class="icone">
+                <span>X</span>
+            </div>
+            <div class="icone">
+                <span>O</span>
+            </div>
+        </div>
+
+        <p class="menuTitle">DIFICULDADE</p>
+        <div id="dificulties">
+            <div class="dificulty">
+                <span>Fácil</span>
+            </div>
+            <div class="dificulty">
+                <span>Médio</span>
+            </div>
+            <div class="dificulty">
+                <span>Difícil</span>
+            </div>
+        </div>
+
+        <button id="play" ontouchstart>JOGAR</button>
+    </div>
+
+    <!-- ------- GAME ------- -->
+    <div id="game">
+
+        <div id="gameHeader">
+
+            <div id="turn">
+                <span>VEZ DO</span> <img src="assets/x.svg" id="turnImg"> 
+            </div>
+
+            <button id="reset" ontouchstart>
+                <img src="assets/reset.svg">
+            </button>
+        </div>
+
+        <div id="gameMain">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+
+        <div id="gameScore">
+            <div class="score">
+                <p class="scoreTitle">X</p>
+                <p class="scoreValue">0</p>
+            </div>
+            <div class="score">
+                <p class="scoreTitle">EMPATE</p>
+                <p class="scoreValue">0</p>
+            </div>
+            <div class="score">
+                <p class="scoreTitle">O</p>
+                <p class="scoreValue">0</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------- JS ------- -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<!-- TODO:
+- REMOVE FILTER FROM TURN IMAGE AND MAKE NEW ASSETS WITH GRAY IMAGES 
+-->
